@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/ETS.png";
 import ContryDrop from "../ContryDrown";
+import Button from "@mui/material/Button";
+import { IoMdSearch } from "react-icons/io";
 
 const Header = () => {
   return (
@@ -15,7 +17,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="header">
+        <header className="header">
           <div className="container">
             <div className="row">
               <div className="logowapper d-flex align-items-center col-sm-2">
@@ -25,10 +27,19 @@ const Header = () => {
               </div>
               <div className="d-flex align-items-center col-sm-10 part2">
                 <ContryDrop />
+                <div className="headersearch ml-3 mr-3">
+                  <input
+                    type="text"
+                    placeholder="Rechercher votre produit..."
+                  />
+                  <Button>
+                    <IoMdSearch />
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </header>
       </div>
     </>
   );
