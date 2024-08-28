@@ -9,10 +9,12 @@ body {
   font-size: 15px;
 }
 
-.header .test {
+.headerw .test {
   padding: 10px 0px;
   background: rgb(57, 57, 234);
 }
-.header .test p {
+.headerw .test p {
   color: aliceblue;
+  font-size: 15px;
+  font-weight: 700;
 }
