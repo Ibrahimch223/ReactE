@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../../assets/images/ETS.png";
+import ContryDrop from "../ContryDrown";
+
 const Header = () => {
   return (
     <>
@@ -12,15 +14,18 @@ const Header = () => {
             </p>
           </div>
         </div>
-      </div>
 
-      <div className="header">
-        <div className="container">
-          <div className="row">
-            <div className="logowapper col-sm-3">
-              <Link to={"/"}>
-                <img src={Logo} />
-              </Link>
+        <div className="header">
+          <div className="container">
+            <div className="row">
+              <div className="logowapper d-flex align-items-center col-sm-2">
+                <Link to={"/"}>
+                  <img src={Logo} alt="Logo" />
+                </Link>
+              </div>
+              <div className="d-flex align-items-center col-sm-10 part2">
+                <ContryDrop />
+              </div>
             </div>
           </div>
         </div>

@@ -18,3 +18,36 @@ body {
   font-size: 15px;
   font-weight: 700;
 }
+.headerw .header {
+  width: 90%;
+  height: auto;
+  padding: 15px 0px;
+}
+.logowapper img {
+  width: 150px;
+  height: 80px;
+  min-width: 150px;
+}
+.headerw .header .part2 .contryDrop {
+  width: 150px;
+  height: 60px;
+  min-width: 150px;
+  text-align: left;
+  justify-content: flex-start !important;
+  border: 1px solid rgba(0, 0, 0, 0.2) !important;
+  border-radius: 7px;
+  padding: 10px 10px !important;
+}
+.headerw .header .part2 .contryDrop .label {
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+.headerw .header .part2 .contryDrop .label {
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+  font-weight: 800;
+}
+.headerw .header .part2 .contryDrop span.ml-auto svg {
+  opacity: 1;
+}
