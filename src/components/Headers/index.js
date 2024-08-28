@@ -68,11 +68,16 @@ const Header = () => {
                   <Button className="circle mr-3">
                     <FaRegUser />
                   </Button>
-                  <div className="ml-auto cartTab">
+                  <div className="ml-auto cartTab d-flex align-items-center">
                     <span className="price">5000CFA</span>
-                    <Button className="circle ml-2">
-                      <AiOutlineShoppingCart />
-                    </Button>
+                    <div className="position-relative ml-2">
+                      <Button className="circle">
+                        <AiOutlineShoppingCart />
+                      </Button>
+                      <span className="count d-flex align-items-center justify-content-center">
+                        1
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
