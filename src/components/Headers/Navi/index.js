@@ -2,6 +2,7 @@ import { CiMenuBurger } from "react-icons/ci";
 import Button from "@mui/material/Button";
 import { FaAngleDown } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { MdOutlineHome } from "react-icons/md";
 
 const Navi = () => {
   return (
@@ -21,10 +22,13 @@ const Navi = () => {
               </Button>
             </div>
 
-            <div className="col-sm-9 navPart2">
+            <div className="col-sm-9 navPart2 d-flex align-items-center">
               <ul className="list list-inline">
                 <li className="list-inline-item">
-                  <Link to="/">Home</Link>
+                  <Link to="/">
+                    <MdOutlineHome />
+                    Home
+                  </Link>
                 </li>
                 <li className="list-inline-item">
                   <Link to="/">Telephone</Link>
