@@ -32,7 +32,7 @@ body {
 .headerw .header {
   width: 100%;
   height: auto;
-  padding: 25px 0px;
+  padding: 25px 5px;
 }
 .logowapper img {
   width: 180px;
@@ -131,8 +131,14 @@ header .part3 .circle svg {
   height: 20px;
 }
 nav .allCatTab {
-  background: rgb(57, 57, 234);
-  padding: 8px 30px !important;
+  background: rgb(13, 75, 247);
+  padding: 15px 10px !important;
   border-radius: 30px !important;
   color: #fff;
+}
+nav .allCatTab .icon svg {
+  font-size: 20px !important;
+}
+nav .allCatTab .icon svg {
+  font-size: 20px !important;
 }
