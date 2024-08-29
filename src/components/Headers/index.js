@@ -52,13 +52,16 @@ const Header = () => {
                   <img src={Logo} alt="Logo" />
                 </Link>
               </div>
+
               <div className="d-flex align-items-center col-sm-10 part2">
                 <ContryDrop />
                 <SearchBox />
+
                 <div className="part3 d-flex align-items-center ml-auto">
                   <Button className="circle mr-3">
                     <FaRegUser />
                   </Button>
+
                   <div className="ml-auto cartTab d-flex align-items-center">
                     <span className="price">5000CFA</span>
                     <div className="position-relative ml-2">
