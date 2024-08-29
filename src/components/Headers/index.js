@@ -4,6 +4,7 @@ import ContryDrop from "../ContryDrown";
 import Button from "@mui/material/Button";
 import { FaRegUser } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import SearchBox from "./SearchBaox";
 
 function number_format(number, decimals, dec_point, thousands_sep) {
   // *     example: number_format(1234.56, 2, ',', ' ');
@@ -53,7 +54,7 @@ const Header = () => {
               </div>
               <div className="d-flex align-items-center col-sm-10 part2">
                 <ContryDrop />
-
+                <SearchBox />
                 <div className="part3 d-flex align-items-center ml-auto">
                   <Button className="circle mr-3">
                     <FaRegUser />
