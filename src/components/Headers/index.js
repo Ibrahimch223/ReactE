@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/images/ETS.png";
 import ContryDrop from "../ContryDrown";
 import Button from "@mui/material/Button";
-import { IoMdSearch } from "react-icons/io";
 import { FaRegUser } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
@@ -54,15 +53,6 @@ const Header = () => {
               </div>
               <div className="d-flex align-items-center col-sm-10 part2">
                 <ContryDrop />
-                <div className="headersearch ml-3 mr-3">
-                  <input
-                    type="text"
-                    placeholder="Rechercher votre produit..."
-                  />
-                  <Button>
-                    <IoMdSearch />
-                  </Button>
-                </div>
 
                 <div className="part3 d-flex align-items-center ml-auto">
                   <Button className="circle mr-3">
