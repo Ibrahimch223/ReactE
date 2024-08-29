@@ -64,7 +64,7 @@ body {
   opacity: 1;
 }
 
-header .headersearch {
+.headersearch {
   width: 60%;
   height: 60px;
   background: #f3f4f7;
@@ -73,7 +73,7 @@ header .headersearch {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 7px;
 }
-header .headersearch input {
+.headersearch input {
   background: transparent !important;
   outline: none !important;
   font-size: 16px;
@@ -83,7 +83,7 @@ header .headersearch input {
   border: 0px !important;
   padding: 0px 20px !important;
 }
-header .headersearch button {
+.headersearch button {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -93,8 +93,9 @@ header .headersearch button {
   width: 40px !important;
   border-radius: 50% !important;
 }
-header .headersearch button svg {
+.headersearch button svg {
   font-size: 25px;
+  opacity: 0.8;
 }
 
 header .part3 .circle {
@@ -130,6 +131,14 @@ header .part3 .circle svg {
   width: 20px;
   height: 20px;
 }
+nav .navPart1 {
+  max-width: 20%;
+  flex: 0 0 20%;
+}
+nav .navPart2 {
+  max-width: 80%;
+  flex: 0 0 80%;
+}
 nav .allCatTab {
   background: rgb(13, 75, 247);
   padding: 15px 10px !important;
@@ -144,7 +153,6 @@ nav .allCatTab .icon svg {
 }
 nav .navPart2 ul {
   margin-bottom: 0px;
-  padding-left: 32px;
 }
 nav .navPart2 ul li a {
   font-size: 15px;
@@ -164,4 +172,24 @@ nav .navPart2 ul li a svg {
 nav .navPart2 ul li a:hover {
   background: #f0faff;
   color: rgb(13, 75, 247);
+}
+.locationModal .MuiPaper-elevation {
+  padding: 25px;
+}
+.locationModal .countryList {
+  margin-bottom: 0px;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 15px 20px;
+}
+.locationModal .countryList li {
+  width: 100%;
+  list-style: none;
+}
+.locationModal .countryList li button {
+  width: 100%;
+  text-transform: capitalize !important;
+  color: #000 !important;
+  justify-content: flex-start !important;
 }
