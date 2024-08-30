@@ -17,6 +17,16 @@ body {
     max-width: 1200px;
   }
 }
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 8px !important;
+}
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
 .container {
   max-width: 90%;
 }
@@ -145,11 +155,11 @@ nav .allCatTab {
   border-radius: 30px !important;
   color: #fff;
 }
-nav .allCatTab .icon svg {
-  font-size: 20px !important;
+nav .allCatTab .icon1 svg {
+  font-size: 30px !important;
 }
-nav .allCatTab .icon svg {
-  font-size: 20px !important;
+nav .allCatTab .icon2 svg {
+  font-size: 30px !important;
 }
 nav .navPart2 ul {
   margin-bottom: 0px;
@@ -174,7 +184,22 @@ nav .navPart2 ul li a:hover {
   color: rgb(13, 75, 247);
 }
 .locationModal .MuiPaper-elevation {
+  width: 100%;
   padding: 25px;
+  position: relative;
+}
+.locationModal .close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #000 !important;
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+}
+.locationModal .close svg {
+  font-size: 22px;
 }
 .locationModal .countryList {
   margin-bottom: 0px;
@@ -192,4 +217,5 @@ nav .navPart2 ul li a:hover {
   text-transform: capitalize !important;
   color: #000 !important;
   justify-content: flex-start !important;
+  padding: 15px 20px;
 }
