@@ -26,24 +26,36 @@ const Navi = () => {
               <ul className="list list-inline">
                 <li className="list-inline-item">
                   <Link to="/">
-                    <MdOutlineHome />
-                    Home
+                    <Button>
+                      <MdOutlineHome />
+                      Home
+                    </Button>
                   </Link>
                 </li>
                 <li className="list-inline-item">
-                  <Link to="/">Telephone</Link>
+                  <Link to="/">
+                    <Button>Telephone</Button>
+                  </Link>
                 </li>
                 <li className="list-inline-item">
-                  <Link to="/">Tablete</Link>
+                  <Link to="/">
+                    <Button>Tablete</Button>
+                  </Link>
                 </li>
                 <li className="list-inline-item">
-                  <Link to="/">Ordinateur</Link>
+                  <Link to="/">
+                    <Button>Ordinateur</Button>
+                  </Link>
                 </li>
                 <li className="list-inline-item">
-                  <Link to="/">Electroménage</Link>
+                  <Link to="/">
+                    <Button>Electroménage</Button>
+                  </Link>
                 </li>
                 <li className="list-inline-item">
-                  <Link to="/">Contact</Link>
+                  <Link to="/">
+                    <Button>Contact</Button>
+                  </Link>
                 </li>
               </ul>
             </div>

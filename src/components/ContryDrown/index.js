@@ -1,9 +1,15 @@
+import React from "react";
 import { FaAngleDown } from "react-icons/fa6";
 import Button from "@mui/material/Button";
 import { IoMdSearch } from "react-icons/io";
 import Dialog from "@mui/material/Dialog";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
+import Slide from "@mui/material/Slide";
+
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 
 const ContryDrop = () => {
   const [isOpenModal, setisOpenModal] = useState(false);
@@ -21,7 +27,12 @@ const ContryDrop = () => {
           <FaAngleDown />
         </span>
       </Button>
-      <Dialog open={isOpenModal} className="locationModal">
+      <Dialog
+        open={isOpenModal}
+        TransitionComponent={Transition}
+        onClose={() => setisOpenModal(false)}
+        className="locationModal"
+      >
         <h4>Votre lieux</h4>
         <Button className="close" onClick={() => setisOpenModal(false)}>
           <IoMdClose />
@@ -34,63 +45,63 @@ const ContryDrop = () => {
         </div>
         <ul className="countryList mt-3">
           <li>
-            <Button>ACI 2000</Button>
+            <Button onClick={() => setisOpenModal(false)}>ACI 2000</Button>
           </li>
           <li>
-            <Button>Dafina</Button>
+            <Button onClick={() => setisOpenModal(false)}>Dafina</Button>
           </li>
           <li>
-            <Button>1008 Logement</Button>
+            <Button onClick={() => setisOpenModal(false)}>1008 Logement</Button>
           </li>
           <li>
-            <Button>Doumassana</Button>
+            <Button onClick={() => setisOpenModal(false)}>Doumassana</Button>
           </li>
           <li>
-            <Button>Badalabougou</Button>
+            <Button onClick={() => setisOpenModal(false)}>Badalabougou</Button>
           </li>
           <li>
-            <Button>Magnabougou</Button>
+            <Button onClick={() => setisOpenModal(false)}>Magnabougou</Button>
           </li>
           <li>
-            <Button>Niamakoro</Button>
+            <Button onClick={() => setisOpenModal(false)}>Niamakoro</Button>
           </li>
           <li>
-            <Button>Magnabougou</Button>
+            <Button onClick={() => setisOpenModal(false)}>Magnabougou</Button>
           </li>
           <li>
-            <Button>Kalaban-coura</Button>
+            <Button onClick={() => setisOpenModal(false)}>Kalaban-coura</Button>
           </li>
           <li>
-            <Button>Kalaban-coro</Button>
+            <Button onClick={() => setisOpenModal(false)}>Kalaban-coro</Button>
           </li>
           <li>
-            <Button>Lafiabougou</Button>
+            <Button onClick={() => setisOpenModal(false)}>Lafiabougou</Button>
           </li>
           <li>
-            <Button>Sabalibougou</Button>
+            <Button onClick={() => setisOpenModal(false)}>Sabalibougou</Button>
           </li>
           <li>
-            <Button>Sotiba</Button>
+            <Button onClick={() => setisOpenModal(false)}>Sotiba</Button>
           </li>
           <li>
-            <Button>BaganaBougou</Button>
+            <Button onClick={() => setisOpenModal(false)}>BaganaBougou</Button>
           </li>
           <li>
-            <Button>Yrimadio</Button>
+            <Button onClick={() => setisOpenModal(false)}>Yrimadio</Button>
             <li>
-              <Button>Magnabougou</Button>
+              <Button onClick={() => setisOpenModal(false)}>Magnabougou</Button>
             </li>
             <li>
-              <Button>Magnabougou</Button>
+              <Button onClick={() => setisOpenModal(false)}>Magnabougou</Button>
             </li>
             <li>
-              <Button>Magnabougou</Button>
+              <Button onClick={() => setisOpenModal(false)}>Magnabougou</Button>
             </li>
             <li>
-              <Button>Magnabougou</Button>
+              <Button onClick={() => setisOpenModal(false)}>Magnabougou</Button>
             </li>
             <li>
-              <Button>Magnabougou</Button>
+              <Button onClick={() => setisOpenModal(false)}>Magnabougou</Button>
             </li>
           </li>
         </ul>
